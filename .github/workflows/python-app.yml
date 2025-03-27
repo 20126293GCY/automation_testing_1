@@ -11,7 +11,7 @@ on:
 
 permissions:
   contents: read
-  pull-request: write
+  pull-requests: write
 
 jobs:
   build:
@@ -43,4 +43,4 @@ jobs:
       uses: orgoro/coverage@v3
       with:
           coverageFile: coverage.xml
-          token: ${{ secretes.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
